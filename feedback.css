@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+main {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+legend {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width:500px;
+}
+
+/*.rating {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}*/
+
+.rating input[type="radio"] {
+	display: none;
+}
+
+.rating label {
+	display:block;
+	cursor: pointer;
+	font-weight: 200;
+	width:100px;
+	}
+.rating label span{
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 20px 10px 10px;
+	border-radius: 20px;
+	transition: .25s ease;
+}
+.rating label span:hover
+ {
+	background-color: #d6d6e5;
+}
+.rating label span:before{
+	content:"";
+	background-color: #fff;
+	width:42px;
+	height:42px;
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: .25s ease;
+	box-shadow: inset 0 0 0 2px #00005c;
+}
+.rating{
+	display:flex;
+	margin-right:10px;
+	padding:5px 10px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	cursor:pointer;
+}
+input[type="radio"]:checked + .rating{
+	background-color: #2196f3;
+	color:#fff;
+}

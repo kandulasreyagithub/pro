@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="styles.css">
+    <title>project</title>
+    <!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('b5ac59vkn8yn');
+    </script>
+    <!-- End of Async Drift Code -->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <nav>
+                <a class="logo" href="#" >Carop</a>
+                <ul>
+                    <li><a href="./index1.html">Home</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href='./services.html'>Services</a></li>
+                    <li><a href='./contact1.html'>Contact Us</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Career Guidance</h1>
+            <p> HI,Welcome to our website<br>We know that you are here to check <br>for the career options infront of you.<br>Then why so late login now </p>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login' action="login.php" method="post">
+                    <input type='text'class='input-field'placeholder='Email Id' name="EmailId" >
+		            <input type='password'class='input-field'placeholder='Enter Password' name="EnterPassword" >
+		            <input type='checkbox'class='check-box'><span>Remember Password</span>
+		            <button type='submit'class='submit-btn' name="submit">Login</button>
+                
+              </form>
+              <form id='register' class='input-group-register' action="register.php" method="post">
+                  <input type='text'class='input-field'placeholder='First Name' name="FirstName">
+                  <input type='text'class='input-field'placeholder='Last Name ' name="LastName">
+                  <input type='email'class='input-field'placeholder='Email Id' name="EmailId">
+                  <input type='password'class='input-field'placeholder='Enter Password' name="EnterPassword">
+                  <input type='password'class='input-field'placeholder='Confirm Password' name="ConfirmPassword">
+                  <input type='checkbox'class='check-box' name=""><span>I agree to the terms and conditions</span>
+                      <button type='submit'class='submit-btn' name="submit">Register</button>
+                </form>
+              </div>
+          </div>
+      </div>
+      <script>
+          var x=document.getElementById('login');
+      var y=document.getElementById('register');
+      var z=document.getElementById('btn');
+      function register()
+      {
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+  

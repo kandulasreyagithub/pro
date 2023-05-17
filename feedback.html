@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Page</title>
+	<link rel="stylesheet" type="text/css" href="feedback.css">
+	<script src="myscript.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Feedback Page</h1>
+	</header>
+	<main>
+		<form action="feedback.php" method="post">
+			<fieldset>
+				<legend>How would you rate our service?</legend>
+				<div class="rating">
+					<label for="rating" >Rating:</label>
+					<input type="number" id="rating" name="Rating" step="0.1" required>
+					<!--<input type="radio" name="rating" value="1" id="rating1" onclick="activateRadioButton('rating1')">
+					<label for="rating1">1</label>
+					<input type="radio" name="rating" value="2" id="rating2" onclick="activateRadioButton('rating2')">
+<label for="rating1">2</label>
+					<input type="radio" name="rating" value="3" id="rating3" onclick="activateRadioButton('rating3')">
+					<label for="rating1">3</label>
+					<input type="radio" name="rating" value="4" id="rating4" onclick="activateRadioButton('rating4')">
+					<label for="rating1">4</label>
+					<input type="radio" name="rating" value="5" id="rating5" onclick="activateRadioButton('rating5')">
+					<label for="rating1">5</label>
+					 
+				
+					<label for="star5" title=" 5stars"> <input type="radio" id="star5" name="rating" value="5" onclick="activateRadioButton('star5')"><span> 5stars</span> </label>
+					
+					<label for="star4" title=" 4stars"><input type="radio" id="star4" name="rating" value="4" onclick="activateRadioButton('star4')"> <span> 4stars</span> </label>
+					
+					<label for="star3" title=" 3stars"> <input type="radio" id="star3" name="rating" value="3" onclick="activateRadioButton('star3')"><span> 3stars</span>  </label>
+					
+					<label for="star2" title=" 2stars"><input type="radio" id="star2" name="rating" value="2" onclick="activateRadioButton('star2')"> <span> 2stars</span> </label>
+					
+					<label for="star1" title=" 1star"><input type="radio" id="star1" name="rating" value="1" onclick="activateRadioButton('star1')"> <span> 1star</span> </label>-->
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Feedback</legend>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="Name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="Email" required>
+				<label for="feedback">Feedback</label>
+				<textarea id="feedback" name="Feedback" rows="5" cols="40" required></textarea>
+				<label for="queries">Queries</label>
+				<textarea id="queries" name="Queries" rows="5" cols="40" required></textarea>
+			</fieldset>
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+	
+</body>
+</html>
